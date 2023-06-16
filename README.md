@@ -76,6 +76,29 @@ Script
 </details>
 
 
+<details>
+    <summary><h4> Experiência e Interface de Usuário<h4></summary>
 
+```
+Prototipo
+```
+ Representa os wireframes estilizados com certas funções de navegação entre as páginas prototipadas, com bastante fidelidade ao projeto final: 
+1. Representa o arquivo png da página de configuração.
+2. Representa o arquivo png da página de filtros.
+3. Representa o arquivo png da página de interesses do usuário.
+4. Representa o arquivo png da página de Home/Motherbord.
+5. Representa o arquivo png da página de Perfil do usuário.
+6. Representa o arquivo png da página de Tela de ajuda.
+7. Representa o arquivo png da página de gerente.
+
+```
+Moodbord e Guia de Estilo
+```
+ Representa uma coleção visual de materiais que transmite os estilos e conceitos que serão expostos na página :
+1. Representa as características que o ux designer vai pôr.
+2. Além especificar as cores principais que irão apresentar na tela, imagens, o tipo de fonte usada e os ícones inseridos.
+
+
+</details>
 
 </details>
