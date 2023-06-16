@@ -40,7 +40,7 @@ Utilizamos os protótipos criados na disciplina de UX para desenvolver as págin
 - Power Architect
 - Adobe Color
 - Terminal Linux
-- PosgresSQL **Comand Line**
+- PostgresSQL **Comand Line**
 
 </details>
       
@@ -56,19 +56,22 @@ Descreveremos aki todo o que tem dentro das pastas:
 ```
 Modelo Conceitual
 ```
- Representa o modelo conceitual e nele existem 2 arquivos: 
+ Representa a pasta que abriga os modelo conceitual e nela existem 2 arquivos: 
 1. É o arquivo do BrModelo 
 2. É o arquivo de png que representa o modelo conceitual
 
 ```
 Modelo no Architect
 ```
-
+ Representa a pasta que abriga o modelo logico e nela tem 2 arquivos:
+1. É o arquivo do Power Architect
+2. É o arquivo do Power Architect so que em forma de PDF.
 
 ```
-
+Script
 ```
-
+  Representa a pasta que abriga o script e nela tem 1 arquivo:
+- É o arquivo que se for rodado no postgres ira implemanetar o banco de dados.
 
 </details>
 
