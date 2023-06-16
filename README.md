@@ -98,7 +98,12 @@ Moodbord e Guia de Estilo
 1. Representa as características que o ux designer vai pôr.
 2. Além especificar as cores principais que irão apresentar na tela, imagens, o tipo de fonte usada e os ícones inseridos.
 
-
+```
+User Flow
+```
+ Representa um diagrama a qual  mostra  a jornada que o usuário fara na página web :
+1. 
+2. 
 </details>
 
 </details>
