@@ -80,7 +80,7 @@ Script
     <summary><h4> Experiência e Interface de Usuário<h4></summary>
 
 ```
-Prototipo
+Protótipo
 ```
  Representa os wireframes estilizados com certas funções de navegação entre as páginas prototipadas, com bastante fidelidade ao projeto final: 
 1. Representa o arquivo png da página de configuração.
