@@ -1,1 +1,78 @@
-# Projeto-Fortes
+# *Projeto Integrado*
+
+## Nome e matricula, respectivamente:
+   * [Matheus Endlich Silveira](https://www.instagram.com/matheus_inglees/), 202305392.
+   * [Maria Luiza Franzotti Loureiro de Melo](https://www.instagram.com/marialumelo_/), 202305413.
+   * [João Henrique Alves Silva](https://www.instagram.com/joaoh_silva15/), 202305582.
+   * [Marcos Vinicius Silva Torres](https://www.instagram.com/maarkin_t/), 202305406.
+
+## Professores:
+   * [Abrantes Araujo Silva Filho](https://github.com/abrantesasf).
+   * [Otavio Lube dos Santos](https://www.instagram.com/prof.otaviolube/).
+   * [Susiléa Abreu dos Santos Lima](https://www.instagram.com/susilealima/).
+
+## Sobre o Projeto Integrado:
+O projeto consiste em uma combinação de três disciplinas e seus três professores. A principal premissa do trabalho é demonstrar a interação das disciplinas entre si e facilitar o entendimento conjunto delas. Na nossa turma, a temática foi a criação do banco de talentos para resolver o problema da empresa Fortes. Portanto, tivemos que desenvolver em cada disciplina, respectivamente:
+
+* ### UX: 
+A interface foi desenvolvida seguindo todos os conceitos, dicas e fundamentos passados na aula. Criamos um guia de estilo e um protótipo navegável que representa fielmente o design proposto.
+
+* ### Banco de dados: 
+Criamos um modelo conceitual do projeto e o traduzimos para o modelo lógico utilizando a ferramenta [Power Architect](https://blog.xpeducacao.com.br/sql-power-architect/). Em seguida, implementamos o modelo no servidor de disciplinas UVV por meio de um script.
+
+* ### Desenvolvimento Web: 
+Utilizamos os protótipos criados na disciplina de UX para desenvolver as páginas do projeto. A versão final do projeto é interativa e pode ser usada normalmente.
+
+
+<details>
+    <summary><h2> Aplicativos e Sites Usados <h2></summary>
+  
+ Aqui estão os aplicartivos e sites usados na produção do projeto em ambas as materias:
+
+- BrModelo
+- VsCode 
+- Github Desktop
+- Discord
+- Oracle VM Virtual Box Gerenciador (dbserver2)
+- Figma
+- Balsamic
+- Replit
+- Power Architect
+- Adobe Color
+- Terminal Linux
+- PosgresSQL **Comand Line**
+
+</details>
+      
+<details>
+    <summary><h2> Organização <h2></summary>
+
+Descreveremos aki todo o que tem dentro das pastas:
+
+
+<details>
+    <summary><h4> Banco de dados <h4></summary>
+
+```
+Modelo Conceitual
+```
+ Representa o modelo conceitual e nele existem 2 arquivos: 
+1. É o arquivo do BrModelo 
+2. É o arquivo de png que representa o modelo conceitual
+
+```
+Modelo no Architect
+```
+
+
+```
+
+```
+
+
+</details>
+
+
+
+
+</details>
