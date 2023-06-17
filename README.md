@@ -137,7 +137,6 @@ Pasta Images
  A pasta com o nome "IMAGES" se refere a todas as imagens que usamos para criação, configuração e customização do nosso site em HTML/CSS, todas essas imagens sendo nomaes para o seu proposito dentro da construção do Site.
       </details>
       
-      </details>
       
 
       
