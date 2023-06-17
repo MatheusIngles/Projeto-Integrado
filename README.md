@@ -107,3 +107,39 @@ User Flow
 </details>
 
 </details>
+  
+  
+  <details>
+    <summary><h4> Construção de Software para Web <h4></summary>
+      
+      ```
+      HTML
+      ```
+      Os Arquivos HTML adcionados a essa pasta representa as páginas dos sites criados comn base o Protótipo (sendo referente a materia Experiência e Interface de Usuário), e ser posta no rede UVV:
+      1. index.html: Representa a página Home/Motherbord
+      2. index2.html: Representa a página do Perfil do usuário.
+      3. index3.html: Representa a página de configurações.
+      4. index4.html: Representa a página da Tela de ajuda.
+      5. index5.html: Representa a página dos interesses do usuário.
+      6. index6.html: Representa a página dos filtros.
+      7. index7.html: Representa a página de gerencia.
+      
+      ```
+      CSS
+      ```
+      O Arquivo CSS dentro da pasta representa toda estilização feita para os HTML's, deixando-o mais proximo de uma versão completa do prototipo e com uma cara de "Site Agradavel".
+      
+      ```
+      JavaScript
+      ```
+      
+      ```
+      Pasta Images
+      ```
+      A pasta com o nome "IMAGES" se refere a todas as imagens que usamos para criação, configuração e customização do nosso site em HTML/CSS, todas essas imagens sendo nomaes para o seu proposito dentro da construção do Site.
+      </details>
+      
+      </details>
+      
+
+      
