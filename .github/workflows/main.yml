@@ -16,4 +16,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages
-          folder: Projeto_Integrado/Construção_de_Software_para_Web/
+          folder: Projeto_Integrado/Construção_de_Software_para_Web
