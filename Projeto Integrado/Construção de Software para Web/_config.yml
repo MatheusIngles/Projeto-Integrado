@@ -10,6 +10,9 @@ plugins:
 
 # Outras configurações opcionais
 
+exclude:
+  - assets/css/style.scss
+
 # Título do site
 title: Meu Site
 
