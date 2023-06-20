@@ -255,3 +255,15 @@ footer {
 .nome {
   margin-top: 0px;
 }
+
+.balao7 {
+  position: relative;
+  display: flex;
+  width: 115%;
+  height: 590px;
+  right: 50%;
+  background-color: #5979BC;
+  border-radius: 10px;
+  margin: 50px auto;
+  margin-top: 100px;
+}
