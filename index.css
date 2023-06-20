@@ -1,6 +1,10 @@
+
 body {
   background-color: #0F2E50;
   margin: 0px;
+  font-family: 'Lexend';
+  width: 100%;
+  
 
 }
 
@@ -111,11 +115,60 @@ header img {
   position: relative;
   display: flex;
   width: 95%;
-  height: 425px;
+  height: 590px;
   background-color: #5979BC;
   border-radius: 10px;
   margin: 50px auto;
+  margin-top: 100px;
 }
+
+
+.divisao1 {
+  position: absolute  ;
+  display: flex;
+  width: 35%;
+  height: 270px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  margin: 50px auto;
+  left: 60%;
+}
+
+.divisao2 {
+  position: relative  ;
+  display: flex;
+  width: 35%;
+  height: 150px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  margin: 50px auto;
+  left: 27.5%;
+  top: 55%;
+  
+}
+
+.divisao3 {
+position: absolute;
+display: flex;
+width: 50%;
+height: 590px;
+background-color: #D9D9D9;
+border-radius: 10px;
+background-image: url('https://img.freepik.com/fotos-premium/mulher-de-vestido-jogando-sinuca-com-um-homem-em-um-pub_151355-2550.jpg');
+background-size: cover;}
+
+.perfil2{ border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  right: 85px;
+  position: absolute;
+  transform: scale(0.4);
+  margin-top: -95px;
+  cursor: pointer;
+
+  
+}
+
 
 .balao::before {
   content: "";
@@ -150,4 +203,55 @@ footer {
   height: 5px; 
   display: flex;
   justify-content: space-between;
+}
+
+.container-imagem-perfil {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+
+.container-imagem-perfil img {
+  width: 100%;
+  max-height: 235px;
+  
+}
+
+.container-perfil {
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: 190px;
+  background-color: #5979BC;
+  border-radius: 15px;
+  margin: -135px auto;
+  font-family: 'Lexend', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 20px;
+  border: 1px solid #ccc;
+
+}
+
+.container-imagem-perfil .foto-perfil img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-perfil p {
+  margin: 7px;
+  width: 60%;
+  position: absolute;
+  right: 100px;
+ 
+  
+  
+}
+
+.container-perfil strong {
+  font-weight: bold;
+}
+
+.nome {
+  margin-top: 0px;
 }
