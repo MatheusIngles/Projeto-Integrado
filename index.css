@@ -139,7 +139,7 @@ header img {
   background-color: #D9D9D9;
   border-radius: 10px;
   margin: 50px auto;
-  left: 27.5%;
+  left: 12.5%;
   top: 55%;
   
 }
@@ -301,6 +301,43 @@ footer {
 }
 
 .interesses-texto{
- font-size: 30px;
- text-align: center;
+  font-size: 30px;
+  text-align: center;
+}
+
+.balao3 {
+  position: relative;
+  display: flex;
+  width: 150px;
+  height: 100%;
+  right: 45%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 50px auto;
+  margin-top: 30px;
+  right:40% ;
+}
+
+.config{
+  border: 1px solid rgb(255, 255, 255);
+}
+ 
+.persona{
+  
+  
+  justify-content: space-between;
+}
+ 
+.opções{ 
+
+ 
+
+
+}
+
+.livros {
+  border-radius: 22px;
+  background: url(imagens/Leitura.png);
+  width: 500px;
+  height: 300px;
 }
