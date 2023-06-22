@@ -114,18 +114,18 @@ User Flow
 HTML
 ```
  Os Arquivos HTML adcionados a essa pasta representa as páginas dos sites criados comn base o Protótipo (sendo referente a materia Experiência e Interface de Usuário), e ser posta no rede UVV:
-1. index.html: Representa a página Home/Motherbord
-2. index2.html: Representa a página do Perfil do usuário.
-3. index3.html: Representa a página de configurações.
-4. index4.html: Representa a página da Tela de ajuda.
-5. index5.html: Representa a página dos interesses do usuário.
-6. index6.html: Representa a página dos filtros.
-7. index7.html: Representa a página de gerencia.
+1. motherbord.html: Representa a página Home/Motherbord
+2. perfil.html: Representa a página do Perfil do usuário.
+3. configuracao.html: Representa a página de configurações.
+4. ajuda.html: Representa a página da Tela de ajuda.
+5. interesses.html: Representa a página dos interesses do usuário.
+6. filtros.html: Representa a página dos filtros.
+7. gerente.html: Representa a página de gerencia.
       
 ```
 CSS
 ```
- O Arquivo CSS dentro da pasta representa toda estilização feita para os HTML's, deixando-o mais proximo de uma versão completa do prototipo e com uma cara de "Site Agradavel".
+ Os Arquivo CSS dentro da pasta representa toda estilização feita para os HTML's, deixando-o mais proximo de uma versão completa do prototipo e com uma cara de "Site Agradavel".
 
 ```
 JavaScript
