@@ -114,7 +114,7 @@ User Flow
 HTML
 ```
  Os Arquivos HTML adcionados a essa pasta representa as páginas dos sites criados comn base o Protótipo (sendo referente a materia Experiência e Interface de Usuário), e ser posta no rede UVV:
-1. motherbord.html: Representa a página Home/Motherbord
+1. index.html: Representa a página Home/Motherbord
 2. perfil.html: Representa a página do Perfil do usuário.
 3. configuracao.html: Representa a página de configurações.
 4. ajuda.html: Representa a página da Tela de ajuda.
