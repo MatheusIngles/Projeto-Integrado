@@ -6,19 +6,225 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Site Fortes</title>
-  <link rel="stylesheet" href="index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+<style>
+  body{
+    background-color: #0F2E50;
+    margin: 0px;
+    font-family: 'Lexend';
+    width: 100%;
+  }
+
+  header{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #5979BC;
+    height: 100px;
+  }
+
+  .pesquisa{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    right: 25%;
+    margin-top: 30px;
+    background-image: url('lupa.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  header img{
+    width: 200px;
+    height: 80px;
+    padding-top: 15px;
+  }
+
+  .list{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .link:not(:last-child){
+    border-right: 2px solid;
+  }
+
+  .link{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+
+  .carlos{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    right: 85px;
+    position: absolute;
+    transform: scale(0.4);
+    margin-top: -95px;
+    cursor: pointer;
+  }
+
+  .contato{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+
+  .engrenagem{
+    cursor: pointer;
+    transform: scale(0.4);
+    margin-top: -95px;
+    height: 150px;
+    width: 150px;
+    right: -15px;
+    position: absolute;
+  }
+
+  footer{
+    background-color: #5979BC;
+    padding: 20px;
+    visibility: visible;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px; 
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container-imagem-perfil{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container-imagem-perfil img{
+    width: 100%;
+    max-height: 235px;
+  }
+
+  .container-perfil{
+    display: flex;
+    width: 80%;
+    height: 220px;
+    background-color:#5979BC;
+    border-radius: 15px;
+    margin: -135px auto;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid#ccc;
+  }
+
+
+  .foto-perfil img{
+    height: 100%;
+    width: auto;
+  }
+
+  .nome {
+    margin: 7px;
+    text-align: justify;
+    position: relative;
+  }
+
+  .container-perfil strong{
+    font-weight: bold;
+  }
+
+  .nome{
+    margin-top: 0px;
+  }
+
+  .texto-perfil{
+    width: 100%;
+  }
+
+  .container-perfil p{
+    margin: 7px;
+  }
+
+  .interesses{
+    width: 60%;
+    height: 400px;
+    background-color:#D9D9D9;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 120px;
+    margin-right: 0px;
+  }
+
+  .amigos{
+    width: 25%;
+    height: 400px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    margin: 50px auto;
+    margin-top: 120px;
+  }
+
+  .main-perfil{
+  display: flex;
+  
+  }
+
+  .interesses-texto{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .config{
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .persona{
+    justify-content: space-between;
+  }
+
+  .opções{ 
+    
+  }
+
+  .livros{
+    border-radius: 22px;
+    background: url(imagens/Leitura.png);
+    width: 500px;
+    height: 300px;
+  }
+</style>
 </head>
 
 <body>
   <header>
     <input type="text" name="search" class="pesquisa" placeholder="Pesquise seus interesses e hobbies">
-    <a href="index.html">
-    <img src="imagens/fortes_logo.png" class="logo" alt="Descrição da imagem" href="index.html">
-    </a>
+      <a href="index.html">
+      <img src="imagens/fortes_logo.png" class="logo" alt="Descrição da imagem" href="index.html">
+      </a>
     <ul class="list">
       <a href="https://fortes.ind.br" class="link">
         SITE FORTES
@@ -30,11 +236,11 @@
         CONTATOS
       </a>
       <a href="index2.html">
-        <img src="imagens/Imagem_Do_Carlos.png" alt="" class="carlos">
-        </a>
-        <a href="index3.html">
-        <img src="imagens/image_4.png" alt="" class="engrenagem">
-        </a>
+      <img src="imagens/Imagem_Do_Carlos.png" alt="" class="carlos">
+      </a>
+      <a href="index3.html">
+      <img src="imagens/image_4.png" alt="" class="engrenagem">
+      </a>
     </ul>
   </header>
   <main>
@@ -49,8 +255,8 @@
         <p class="nome">Carlos Andrade da Silva</p>
         <p class="nome">Analista de Funcionários da Empresa</p>
         <p>Carlos Andrade da Silva é um funcionário relativamente novo na empresa. Ele está sempre interagindo com a área de gestão de pessoas e TI, estando antenado em ambas as partes. Em grande parte dos casos, Carlos tenta trazer uma visão mais jovem e empreendedora às reuniões da equipe, para atualizar a empresa com as tendências do mundo atual. Ele é um pouco reservado, porém se abre quando está entre conhecidos.</p>
-        </div>
       </div>
+    </div>
     </div>
     <div class="main-perfil">
       <div class="interesses">
@@ -58,7 +264,7 @@
           Interesses:
         </h1>
         <div class="livros">
-      </div>
+        </div>
       </div>
       <div class="amigos">
         <h1 class="interesses-texto">
@@ -66,8 +272,7 @@
         </h1>
       </div>
     </div>
-    
-    
   </main>
+    <script src="script.js"></script>
 </body>
 </html>

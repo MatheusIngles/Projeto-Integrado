@@ -6,38 +6,158 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Site Fortes</title>
-  <link rel="stylesheet" href="index.css" />
+<style>
+  body{
+    background-color: #0F2E50;
+    margin: 0px;
+    font-family: 'Lexend';
+    width: 100%;
+  }
+
+  header{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #5979BC;
+    height: 100px;
+  }
+
+  .pesquisa{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    right: 25%;
+    margin-top: 30px;
+    background-image: url('lupa.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  header img{
+    width: 200px;
+    height: 80px;
+    padding-top: 15px;
+  }
+
+  .list{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .link:not(:last-child){
+    border-right: 2px solid;
+  }
+
+  .link{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+
+  .carlos{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    right: 85px;
+    position: absolute;
+    transform: scale(0.4);
+    margin-top: -95px;
+    cursor: pointer;
+  }
+
+  .contato{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+
+  .engrenagem{
+    cursor: pointer;
+    transform: scale(0.4);
+    margin-top: -95px;
+    height: 150px;
+    width: 150px;
+    right: -15px;
+    position: absolute;
+  }
+
+  footer {
+    background-color:#5979BC;
+    padding: 20px;
+    visibility: visible;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px; 
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .balao7 {
+    position: relative;
+    display: flex;
+    width: 115%;
+    height: 590px;
+    right: 50%;
+    background-color: #5979BC;
+    border-radius: 10px;
+    margin: 50px auto;
+    margin-top: 100px;
+  }
+</style>
 </head>
 
 <body>
   <header>
     <input type="text" name="search" class="pesquisa" placeholder="Pesquise seus interesses e hobbies">
-    <a href="index.html">
-    <img src="imagens/fortes_logo.png" class="logo" alt="Descrição da imagem" href="index.html">
-    </a>
+      <a href="index.html">
+      <img src="imagens/fortes_logo.png" class="logo" alt="Descrição da imagem" href="index.html">
+      </a>
     <ul class="list">
-      <a href="https://fortes.ind.br" target="_blank" class="link">
+      <a href="https://fortes.ind.br" class="link">
         SITE FORTES
       </a>
-      <a href="index5.html" target="_blank" class="link">
+      <a href="index5.html" class="link">
         FILTROS
       </a>
-      <a href="https://fortes.ind.br/fale-conosco/" target="_blank" class="contato">
+      <a href="https://fortes.ind.br/fale-conosco/" class="contato">
         CONTATOS
       </a>
       <a href="index2.html">
-        <img src="imagens/Imagem_Do_Carlos.png" alt="" class="carlos">
-        </a>
-        <a href="index3.html">
-        <img src="imagens/image_4.png" alt="" class="engrenagem">
-        </a>
-      </ul>
+      <img src="imagens/Imagem_Do_Carlos.png" alt="" class="carlos">
+      </a>
+      <a href="index3.html">
+      <img src="imagens/image_4.png" alt="" class="engrenagem">
+      </a>
+    </ul>
   </header>
- <main>
-  <div class="balao7"></div>
-<footer>
-  <div class="footer"></div>
-</footer>
+  <main>
+    <div class="balao7"></div>
+    <footer>
+      <div class="footer"></div>
+    </footer>
   </main>
+    <script src="script.js"></script>
 </body>
 </html>
