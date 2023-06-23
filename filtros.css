@@ -3,6 +3,10 @@ body{
     margin: 0px;
     font-family: 'Lexend';
     width: 100%;
+    background-image: url('imagens/image 31.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 header{
@@ -91,3 +95,53 @@ header img{
     right: -15px;
     position: absolute;
 }
+
+img {
+    width: 1600px;
+    height: 700px;
+
+}
+
+.filtragem {
+    position: relative;
+    width: 80%;
+    height: 590px;
+    background-color: #5979BC;
+    border-radius: 10px;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-left: 150px;
+    text-align: center;
+    
+}
+
+h1 {
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+.tabela {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.tabela th,
+.tabela td {
+    padding: 8px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 19px;
+}
+  
+.tabela th {
+    background-color: #f2f2f2;
+}
+  
+.tabela tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+  
+
+  
+
+

@@ -19,7 +19,6 @@ header{
     text-align: center;
     right: 25%;
     margin-top: 30px;
-    background-image: url('lupa.png');
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: right center;
@@ -104,15 +103,124 @@ footer {
 .pesquisa{
     position: absolute;
     width: 40%;
-    height: 40px;
+    height: 60px;
     text-align: center;
-    right: 25%;
-    margin-top: 100px;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: right center;
-    font-size: 20px;
+    right: 30%;
+    margin-top: 60px;
+    font-size: 27px;
     font-weight: bold;
     border-radius: 30px;
+}
+
+.duvida {
+    position: absolute;
+    display: flex;
+    width: 40%;
+    height: 30px;
+    background-color: #ffffff;
+    margin-top: 200px;
+    right: 30%;
+    align-items: center;
+    
+    
+}
+
+h4 {
+    padding-left: 36%;
+    font-size: 18px;
+}
+
+.duvida2 {
+    position: absolute;
+    display: flex;
+    width: 40%;
+    height: 30px;
+    background-color: #ffffff;
+    margin-top: 236px;
+    right: 30%;
+    align-items: center;
+    
+    
+}
+
+.duvida3 {
+    position: absolute;
+    display: flex;
+    width: 40%;
+    height: 30px;
+    background-color: #ffffff;
+    margin-top: 273px;
+    right: 30%;
+    align-items: center;
+    
+    
+}
+
+.duvida4 {
+    position: absolute;
+    display: flex;
+    width: 40%;
+    height: 30px;
+    background-color: #ffffff;
+    margin-top: 310px;
+    right: 30%;
+    align-items: center;
+    
+    
+}
+
+.duvida5 {
+    position: absolute;
+    display: flex;
+    width: 40%;
+    height: 30px;
+    background-color: #ffffff;
+    margin-top: 347px;
+    right: 30%;
+    align-items: center;
+    
+    
+}
+
+h1 {
+    position: absolute;
+    margin-top: 410px;
+    right: 41%;
+}
+
+.nome-duvida {
+    position: absolute;
+    margin-top: 500px;
+    right: 55%;
+}
+
+.duvida-nome {
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+}
+
+.cpf {
+    position: absolute;
+    margin-top: 500px;
+    right: 30%;
+}
+
+.cpf-duvida {
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+}
+
+.desc-duvida {
+    position: absolute;
+    margin-top: 600px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 200px;
+    right: 30%;
 }
 
