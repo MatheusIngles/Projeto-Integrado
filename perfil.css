@@ -221,7 +221,7 @@ footer{
     position: absolute;
     left: 10%;
     color: white;
-    bottom:10px ;
+    bottom:-25px ;
     
 }
 
@@ -230,14 +230,14 @@ footer{
     position: absolute;
     left: 50%;
     color: white;
-    bottom:10px ;
+    bottom:-25px ;
 }
 
 .music{ 
     position: absolute; 
     left: 28%;
     color: white;
-    bottom:10px;
+    bottom:-25px;
 }
 
 h4 {
