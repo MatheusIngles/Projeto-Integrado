@@ -198,56 +198,52 @@ footer{
 
 .fotolivro{
     height: 170px;
-   position: absolute;
-   left: 15%;
-   opacity: 0.6;
-    
+    position: absolute;
+    left: 2%;
+    opacity: 0.6;
 }
 
 .fotoesportes{
     height: 170px;
     position: absolute;
-    left: 30%;
+    left: 23%;
     opacity: 0.6;
-    
-    
 }
 
 
 .fotofoto{
-    height: 160px;
+    height: 170px;
     position: absolute;
     left: 45%;
     opacity: 0.6;
-
 }
 
 .books{ 
     position: absolute;
-    left: 18%;
+    left: 7%;
     color: white;
-    bottom:320px ;
+    bottom:-25px ;
     
 }
 
 
 .fotos{ 
     position: absolute;
-    left: 48%;
+    left: 50%;
     color: white;
-    bottom:320px ;
+    bottom:-25px ;
 }
 
 .music{ 
     position: absolute; 
-    left: 33.5%;
+    left: 28%;
     color: white;
-    bottom:320px ;
+    bottom:-25px ;
 }
 
 h4 {
     position: relative;
-    left: 330px;
+    left: 20px;
     top: 30px;
     font-size: 18px;
 }
