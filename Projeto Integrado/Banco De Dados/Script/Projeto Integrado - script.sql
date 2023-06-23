@@ -1,9 +1,14 @@
 -- Projeto Integrado --
+-- Tema Banco de Talentos --
+-- Professor Abrantes --
+
 -- Nome e matricula, respectivamente: --
 -- Matheus Endlich Silveira, 202305392. --
 -- Maria Luiza Franzotti Loureiro de Melo, 202305413. --
 -- João Henrique Alves Silva, 202305582. --
 -- Marcos Vinicius Silva Torres, 202305406.--
+
+-- Posto isso, Vamos Começar. --
 
 -- Criando a tabela diploma --
 
@@ -272,116 +277,197 @@ COMMENT ON COLUMN categoria.post_id 		IS
 COMMENT ON COLUMN categoria.categoria_post 	IS 
 'Atributo que representa a categoria que um post possa possuir.';
 
-
-
-
-
-
-
+-- Criando a tabela Gerente --
 
 CREATE TABLE gerente (
-                gerente_id NUMERIC(38) NOT NULL,
-                gerente_nome VARCHAR(255) NOT NULL,
+                gerente_id         NUMERIC(38) NOT NULL,
+                gerente_nome       VARCHAR(255) NOT NULL,
                 CONSTRAINT gerente_pk PRIMARY KEY (gerente_id, gerente_nome)
 );
-COMMENT ON TABLE gerente IS 'Tabela que representa o gerente e suas caracteristcas.';
-COMMENT ON COLUMN gerente.gerente_id IS 'Representa o id do funcionario no banco de talentos';
-COMMENT ON COLUMN gerente.gerente_nome IS 'Representa o nome dos funcionarios no banco de talentos.';
+
+-- Comentando na tabela  gerente --
+
+COMMENT ON TABLE gerente                  IS 
+'Tabela que representa o gerente e suas caracteristcas.';
+COMMENT ON COLUMN gerente.gerente_id      IS 
+'Representa o id do funcionario no banco de talentos';
+COMMENT ON COLUMN gerente.gerente_nome    IS 
+'Representa o nome dos funcionarios no banco de talentos.';
+
+-- Criando a tabela Talentos --
 
 
 CREATE TABLE Talentos (
-                funcionario_id NUMERIC(38) NOT NULL,
-                nome VARCHAR(255) NOT NULL,
-                interesses_id NUMERIC(38),
-                curso VARCHAR(255),
+                funcionario_id     NUMERIC(38) NOT NULL,
+                nome               VARCHAR(255) NOT NULL,
+                interesses_id      NUMERIC(38),
+                curso              VARCHAR(255),
                 CONSTRAINT talentos_pk PRIMARY KEY (funcionario_id, nome)
 );
-COMMENT ON TABLE Talentos IS 'Tabela de ligação N:N entre funcionarios, interesses, notificações e Diplomas. Alem de agregar qual essas coisas ao funcionario.';
-COMMENT ON COLUMN Talentos.funcionario_id IS 'Representa o id do funcionario no banco de talentos';
-COMMENT ON COLUMN Talentos.nome IS 'Representa o nome dos funcionarios no banco de talentos.';
-COMMENT ON COLUMN Talentos.interesses_id IS 'Atributo que representa o id dos interesses .';
-COMMENT ON COLUMN Talentos.curso IS 'Representa o Nome do curso que a pessoa pode ser formada.';
 
+-- Comentando na tabela de Talentos --
+
+COMMENT ON TABLE Talentos                 IS 
+'Tabela de ligação N:N entre funcionarios, interesses, notificações e Diplomas. Alem de agregar qual essas coisas ao funcionario.';
+COMMENT ON COLUMN Talentos.funcionario_id  IS 
+'Representa o id do funcionario no banco de talentos';
+COMMENT ON COLUMN Talentos.nome           IS 
+'Representa o nome dos funcionarios no banco de talentos.';
+COMMENT ON COLUMN Talentos.interesses_id  IS 
+'Atributo que representa o id dos interesses .';
+COMMENT ON COLUMN Talentos.curso          IS 
+'Representa o Nome do curso que a pessoa pode ser formada.';
+
+-- Criando a Tabela amigos --
 
 CREATE TABLE amigos (
-                funcionario_id NUMERIC(38) NOT NULL,
-                nome VARCHAR(255) NOT NULL,
-                amigo_id NUMERIC(38),
-                amigo_nome VARCHAR(255),
+                funcionario_id      NUMERIC(38) NOT NULL,
+                nome                VARCHAR(255) NOT NULL,
+                amigo_id            NUMERIC(38),
+                amigo_nome          VARCHAR(255),
                 CONSTRAINT amigos_pk PRIMARY KEY (funcionario_id, nome)
 );
-COMMENT ON TABLE amigos IS 'Tabela que representa cada amigo que o  funcionario possa possuir no banco de talentos.';
-COMMENT ON COLUMN amigos.funcionario_id IS 'Representa o id do funcionario no banco de talentos';
-COMMENT ON COLUMN amigos.nome IS 'Representa o nome dos funcionarios no banco de talentos.';
-COMMENT ON COLUMN amigos.amigo_id IS 'Representa o id do funcionario no banco de talentos';
-COMMENT ON COLUMN amigos.amigo_nome IS 'Representa o nome dos funcionarios no banco de talentos.';
 
+-- Comentando na tabela Amigos --
+
+COMMENT ON TABLE amigos                   IS 
+'Tabela que representa cada amigo que o  funcionario possa possuir no banco de talentos.';
+COMMENT ON COLUMN amigos.funcionario_id  IS 
+'Representa o id do funcionario no banco de talentos';
+COMMENT ON COLUMN amigos.nome             IS 
+'Representa o nome dos funcionarios no banco de talentos.';
+COMMENT ON COLUMN amigos.amigo_id          IS 
+'Representa o id do funcionario no banco de talentos';
+COMMENT ON COLUMN amigos.amigo_nome         IS 
+'Representa o nome dos funcionarios no banco de talentos.';
+
+-- Criando a tabela endereco --
 
 CREATE TABLE endereco (
-                funcionario_id NUMERIC(38) NOT NULL,
-                nome VARCHAR(255) NOT NULL,
-                latitude NUMERIC NOT NULL,
-                longitude NUMERIC NOT NULL,
-                cep VARCHAR(15) NOT NULL,
-                pais VARCHAR(512) NOT NULL,
-                complemento VARCHAR(512),
+                funcionario_id     NUMERIC(38) NOT NULL,
+                nome               VARCHAR(255) NOT NULL,
+                latitude           NUMERIC NOT NULL,
+                longitude          NUMERIC NOT NULL,
+                cep                VARCHAR(15) NOT NULL,
+                pais               VARCHAR(512) NOT NULL,
+                complemento        VARCHAR(512),
                 CONSTRAINT endereco_pk PRIMARY KEY (funcionario_id, nome)
 );
-COMMENT ON TABLE endereco IS 'Tabela que representa o endereço do funcionario.';
-COMMENT ON COLUMN endereco.funcionario_id IS 'Representa o id do funcionario no banco de talentos';
-COMMENT ON COLUMN endereco.nome IS 'Representa o nome dos funcionarios no banco de talentos.';
-COMMENT ON COLUMN endereco.latitude IS 'Representa a latitude que fica localizada a residencia da pessoa. Possui uma restrição de so poder ir de "-90" a "90" graus.';
-COMMENT ON COLUMN endereco.longitude IS 'Representa a longitude que esta localizada a  casa do funcionario. Ele possui uma restrição que os valores so podem ir de "-180"  a "180" graus.';
-COMMENT ON COLUMN endereco.cep IS 'Representa o CEP do funcionario.';
-COMMENT ON COLUMN endereco.pais IS 'Representa o país em que a casa do funcionario esta localizada.';
-COMMENT ON COLUMN endereco.complemento IS 'Representa o complemento para ajudar a identifição da casa do funcionario. Exemplo: Casa amarela na frente da igreja, na esquina e por ai vai.';
 
+-- Comentando na tabela endereco --
+
+COMMENT ON TABLE endereco                 IS  
+'Tabela que representa o endereço do funcionario.';
+COMMENT ON COLUMN endereco.funcionario_id IS 
+'Representa o id do funcionario no banco de talentos';
+COMMENT ON COLUMN endereco.nome           IS 
+'Representa o nome dos funcionarios no banco de talentos.';
+COMMENT ON COLUMN endereco.latitude       IS 
+'Representa a latitude que fica localizada a residencia da pessoa. Possui uma restrição de so poder ir de "-90" a "90" graus.';
+COMMENT ON COLUMN endereco.longitude      IS 
+'Representa a longitude que esta localizada a  casa do funcionario. Ele possui uma restrição que os valores so podem ir de "-180"  a "180" graus.';
+COMMENT ON COLUMN endereco.cep            IS 
+'Representa o CEP do funcionario.';
+COMMENT ON COLUMN endereco.pais           IS 
+'Representa o país em que a casa do funcionario esta localizada.';
+COMMENT ON COLUMN endereco.complemento    IS 
+'Representa o complemento para ajudar a identifição da casa do funcionario. Exemplo: Casa amarela na frente da igreja, na esquina e por ai vai.';
+
+-- Criando as Constrains de checagem da tabela endereco --
+-- Criando a constante de checagem para a latitude --
+
+ALTER TABLE endereco
+ADD CONSTRAINT latitude_check
+CHECK (latitude >= -90 AND
+       latitude <= 90
+)
+;
+
+-- Criando a constante de checagem para a longitude --
+
+ALTER TABLE endereco
+ADD CONSTRAINT longitude_check
+CHECK (longitude >= -180 AND
+       longitude <= 180
+)
+;
+
+-- Criando a tabela Telefone --
 
 CREATE TABLE telefones (
-                funcionario_id NUMERIC(38) NOT NULL,
-                nome VARCHAR(255) NOT NULL,
-                telefone VARCHAR(10) NOT NULL,
-                ddd NUMERIC(3) NOT NULL,
+                funcionario_id     NUMERIC(38) NOT NULL,
+                nome               VARCHAR(255) NOT NULL,
+                telefone           VARCHAR(10) NOT NULL,
+                ddd                NUMERIC(3) NOT NULL,
                 CONSTRAINT telefones_pk PRIMARY KEY (funcionario_id, nome, telefone, ddd)
 );
-COMMENT ON TABLE telefones IS 'Tabela que representa os telefones dos funcionarios.';
-COMMENT ON COLUMN telefones.funcionario_id IS 'Representa o id do funcionario no banco de talentos';
-COMMENT ON COLUMN telefones.nome IS 'Representa o nome dos funcionarios no banco de talentos.';
-COMMENT ON COLUMN telefones.telefone IS 'Representa o telefone dos funcionarios.';
-COMMENT ON COLUMN telefones.ddd IS 'Representa o DDD do telefone do funcionario.';
 
+-- Comentando na tabela telefone --
+
+COMMENT ON TABLE telefones                IS 
+'Tabela que representa os telefones dos funcionarios.';
+COMMENT ON COLUMN telefones.funcionario_id IS 
+'Representa o id do funcionario no banco de talentos';
+COMMENT ON COLUMN telefones.nome          IS 
+'Representa o nome dos funcionarios no banco de talentos.';
+COMMENT ON COLUMN telefones.telefone       IS 
+'Representa o telefone dos funcionarios.';
+COMMENT ON COLUMN telefones.ddd           IS 
+'Representa o DDD do telefone do funcionario.';
+
+-- Criando a tabela Fotos --
 
 CREATE TABLE fotos (
-                funcionario_id NUMERIC(38) NOT NULL,
-                nome VARCHAR(255) NOT NULL,
-                imagem BYTEA,
-                imagem_mine_type VARCHAR(512),
-                logo_charset VARCHAR(512),
-                imagem_arquivo VARCHAR,
+                funcionario_id     NUMERIC(38) NOT NULL,
+                nome               VARCHAR(255) NOT NULL,
+                imagem             BYTEA,
+                imagem_mine_type   VARCHAR(512),
+                logo_charset       VARCHAR(512),
+                imagem_arquivo     VARCHAR,
                 imagem_ultima_atualizacao DATE,
                 CONSTRAINT fotos_pk PRIMARY KEY (funcionario_id, nome)
 );
-COMMENT ON TABLE fotos IS 'Tabela que representa as fotos que vão ser usadas tanto como foto de perfil quanto como imagens dos posts.';
-COMMENT ON COLUMN fotos.funcionario_id IS 'Representa o id do funcionario no banco de talentos';
-COMMENT ON COLUMN fotos.nome IS 'Representa o nome dos funcionarios no banco de talentos.';
-COMMENT ON COLUMN fotos.imagem IS 'Atributo que Representa a foto de perfil ou imagem de um post.';
-COMMENT ON COLUMN fotos.imagem_mine_type IS 'Representa o tipo do formato da imagem. Exemplo: JPEG, PNG e outros.';
-COMMENT ON COLUMN fotos.logo_charset IS 'Conjunto de caracteres usados para codificar ou representar a imagem.';
-COMMENT ON COLUMN fotos.imagem_arquivo IS 'Representa o caminho ate a imagem.';
-COMMENT ON COLUMN fotos.imagem_ultima_atualizacao IS 'Representa a data registrada da ultima atualização feita na foto de perfil ou no post.';
 
+-- Comentando na tabela fotos --
+
+COMMENT ON TABLE fotos                    IS 
+'Tabela que representa as fotos que vão ser usadas tanto como foto de perfil quanto como imagens dos posts.';
+COMMENT ON COLUMN fotos.funcionario_id IS 
+'Representa o id do funcionario no banco de talentos';
+COMMENT ON COLUMN fotos.nome              IS 
+'Representa o nome dos funcionarios no banco de talentos.';
+COMMENT ON COLUMN fotos.imagem            IS 
+'Atributo que Representa a foto de perfil ou imagem de um post.';
+COMMENT ON COLUMN fotos.imagem_mine_type IS 
+'Representa o tipo do formato da imagem. Exemplo: JPEG, PNG e outros.';
+COMMENT ON COLUMN fotos.logo_charset      IS 
+'Conjunto de caracteres usados para codificar ou representar a imagem.';
+COMMENT ON COLUMN fotos.imagem_arquivo    IS 
+'Representa o caminho ate a imagem.';
+COMMENT ON COLUMN fotos.imagem_ultima_atualizacao IS 
+'Representa a data registrada da ultima atualização feita na foto de perfil ou no post.';
+
+-- Criando a tabela emails --
 
 CREATE TABLE emails (
-                funcionario_id NUMERIC(38) NOT NULL,
-                nome VARCHAR(255) NOT NULL,
-                email VARCHAR(254) NOT NULL,
+                funcionario_id     NUMERIC(38) NOT NULL,
+                nome               VARCHAR(255) NOT NULL,
+                email              VARCHAR(254) NOT NULL,
                 CONSTRAINT emails_pk PRIMARY KEY (funcionario_id, nome, email)
 );
-COMMENT ON TABLE emails IS 'Tabela de emails dos funcionarios.';
-COMMENT ON COLUMN emails.funcionario_id IS 'Representa o id do funcionario no banco de talentos, tambem é a chave primaria da tabela funcionarios.';
-COMMENT ON COLUMN emails.nome IS 'Representa o nome dos funcionarios no banco de talentos.';
-COMMENT ON COLUMN emails.email IS 'Representa a emails na tabela, ela possui uma restrição de ter no minino um "@" e um "." .';
 
+-- Comentando na tabela email --
+
+COMMENT ON TABLE emails                   IS 
+'Tabela de emails dos funcionarios.';
+COMMENT ON COLUMN emails.funcionario_id   IS      
+'Representa o id do funcionario no banco de talentos, tambem é a chave primaria da tabela funcionarios.';
+COMMENT ON COLUMN emails.nome             IS  
+'Representa o nome dos funcionarios no banco de talentos.';
+COMMENT ON COLUMN emails.email            IS 
+'Representa a emails na tabela, ela possui uma restrição de ter no minino um "@" e um "." .';
+
+-- Fazendo a ligação das fk para suas respectivas pks --
 
 ALTER TABLE Talentos ADD CONSTRAINT diplomas_talentos_fk
 FOREIGN KEY (curso)
@@ -508,3 +594,6 @@ REFERENCES gerente (gerente_id, gerente_nome)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
+
+
+-- Fim --
