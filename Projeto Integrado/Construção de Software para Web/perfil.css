@@ -1,0 +1,272 @@
+body{
+    background-color: #0F2E50;
+    margin: 0px;
+    font-family: 'Lexend';
+    width: 100%;
+}
+
+header{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #5979BC;
+    height: 100px;
+}
+
+.pesquisa{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    right: 25%;
+    margin-top: 30px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+header img{
+    width: 200px;
+    height: 80px;
+    padding-top: 15px;
+}
+
+.list{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.link:not(:last-child){
+    border-right: 2px solid;
+}
+
+.link{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.carlos{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    right: 85px;
+    position: absolute;
+    transform: scale(0.4);
+    margin-top: -95px;
+    cursor: pointer;
+}
+
+.contato{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.engrenagem{
+    cursor: pointer;
+    transform: scale(0.4);
+    margin-top: -95px;
+    height: 150px;
+    width: 150px;
+    right: -15px;
+    position: absolute;
+}
+
+footer{
+    background-color: #5979BC;
+    padding: 20px;
+    visibility: visible;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-imagem-perfil{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container-imagem-perfil img{
+    width: 100%;
+    max-height: 235px;
+}
+
+.container-perfil{
+    display: flex;
+    width: 80%;
+    height: 220px;
+    background-color:#5979BC;
+    border-radius: 15px;
+    margin: -135px auto;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid#ccc;
+}
+
+
+.foto-perfil img{
+    height: 100%;
+    width: auto;
+}
+
+.nome {
+    margin: 7px;
+    text-align: justify;
+    position: relative;
+}
+
+.container-perfil strong{
+    font-weight: bold;
+}
+
+.nome{
+    margin-top: 0px;
+}
+
+.texto-perfil{
+    width: 100%;
+}
+
+.container-perfil p{
+    margin: 7px;
+}
+
+.interesses{
+    width: 60%;
+    height: 400px;
+    background-color:#D9D9D9;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 120px;
+    margin-right: 0px;
+    
+}
+
+.amigos{
+    width: 25%;
+    height: 400px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    margin: 50px auto;
+    margin-top: 120px;
+}
+
+.main-perfil{
+    display: flex;
+}
+
+.interesses-texto{
+    font-size: 30px;
+    text-align: center;
+    
+    
+}
+
+.config{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.persona{
+    justify-content: space-between;
+}
+
+
+.fotolivro{
+    height: 170px;
+    position: absolute;
+    left: 5%;
+    opacity: 0.6;
+}
+
+.fotoesportes{
+    height: 170px;
+    position: absolute;
+    left: 23%;
+    opacity: 0.6;
+}
+
+
+.fotofoto{
+    height: 170px;
+    position: absolute;
+    left: 45%;
+    opacity: 0.6;
+}
+
+.books{ 
+    position: absolute;
+    left: 10%;
+    color: white;
+    bottom:-25px ;
+    
+}
+
+
+.fotos{ 
+    position: absolute;
+    left: 50%;
+    color: white;
+    bottom:-25px ;
+}
+
+.music{ 
+    position: absolute; 
+    left: 28%;
+    color: white;
+    bottom:-25px;
+}
+
+h4 {
+    position: relative;
+    left: 40%;
+    top: 30px;
+    font-size: 18px;
+}
+
+
+.fotoAmigos{
+
+position: absolute;
+transform: scale(0.4);
+ display: flex;
+ right: 310px;
+ height: 67px;
+ top: 545px;  
+     
+       
+}
+
+
+ .ela{
+    position: absolute;
+    display: flex;
+    border-radius: 50%;
+    right:335px ;
+    height: 30px;
+    top: 610px;
+
+ }       
